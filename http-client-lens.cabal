@@ -1,0 +1,19 @@
+name:                 http-client-lens
+version:              0.1.0.0
+author:               Nick Spinale
+maintainer:           Nick Spinale <nick@nickspinale.com>
+license:              MIT
+license-file:         LICENSE
+build-type:           Simple
+cabal-version:        >=1.10
+
+library
+  hs-source-dirs:     src, gen
+
+  exposed-modules:    Network.HTTP.Client.Lens
+
+  build-depends:      base >=4.8 && <5
+                    , bytestring
+                    , network
+                    , http-types
+                    , http-client
